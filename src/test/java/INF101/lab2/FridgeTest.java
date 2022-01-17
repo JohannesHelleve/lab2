@@ -1,4 +1,4 @@
-package INF101.lab3;
+package INF101.lab2;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;

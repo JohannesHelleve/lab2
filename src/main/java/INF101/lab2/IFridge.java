@@ -1,4 +1,4 @@
-package INF101.lab3;
+package INF101.lab2;
 
 import java.util.List;
 

@@ -13,6 +13,8 @@ Hans idé er å opprette et digitalt kjøkken (woke) og begynner med et kjølesk
  * Kall klassen ``Fridge``
  * Kjøleskapet skal ha en makskapasitet på 20 FridgeItems.
 
+Implementer én og én metode. Når testen for den aktuelle metoden passerer kan du gå videre til neste metode.
+
 ✅ Oppgaven er bestått når alle testene passerer (og levert på Codegrade).
 
 ### Troubleshooting

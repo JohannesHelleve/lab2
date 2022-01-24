@@ -16,4 +16,4 @@ Hans idé er å opprette et digitalt kjøkken (woke) og begynner med et kjølesk
 ✅ Oppgaven er bestått når alle testene passerer (og levert på Codegrade).
 
 ### Troubleshooting
- * Består ikke testene selv om du mener din implementasjon er riktig?Les dokumentasjonen i ``IFridge`` nøye. Ta en titt på ``FridgeTest.java`` og se hva testene sjekker. Les dokumentasjonen og koden for hva som forventes av koden din.
+ * Består ikke testene selv om du mener din implementasjon er riktig? Ta en titt på ``FridgeTest.java`` og se hva testene sjekker. Les dokumentasjonen og koden for hva som forventes av koden din.

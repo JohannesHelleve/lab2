@@ -1,4 +1,4 @@
-# Lab 2 - Interface
+# Lab 2 - Objekt
 
 ## Læringsmål
  * Implementere et objekt

@@ -13,12 +13,19 @@ public class FridgeTest {
 
 	private IFridge fridge = new Fridge();
 	
+	/**
+	 * Get a single FridgeItem
+	 * @return fridgeItem
+	 */
 	public FridgeItem getItem() {
 		LocalDate expirationDate = LocalDate.of(2021, 12, 24);
 		FridgeItem item = new FridgeItem("Christmas Cake", expirationDate);
 		return item;
 	}
 	
+	/**
+	 * Fills the fridge. Place as many items in the fridge as the maxCapacity
+	 */
 	public void fillFridge() {
 		FridgeItem item = getItem();
 		int maxCapacity = fridge.totalSize();
@@ -46,6 +53,11 @@ public class FridgeTest {
 		assertFalse(fridge.placeIn(item));
 	}
 	
+	/**
+	 * Test the method <code>nItemsInFridge</code>.
+	 * Place one and one item in the fridge and check that 
+	 * the number of items in the fridge is correct.
+	 */
 	@Test
 	public void nItemsInFridgeTest() {
 		FridgeItem item = getItem();
@@ -76,6 +88,10 @@ public class FridgeTest {
 		assertThrows(NoSuchElementException.class, () -> fridge.takeOut(item));
 	}
 	
+	/**
+	 * Test <code>emptyFridge</code>. Check that there are no
+	 * items in the fridge after calling <code>emptyFridge</code>.
+	 */
 	@Test
 	public void emptyFridgeTest() {
 		fillFridge();
@@ -85,7 +101,9 @@ public class FridgeTest {
 	}
 	
 	/**
-	 * Checks if Fridge::removeExpiredFoods returns only expired food.
+	 * Checks if <code>removeExpiredFoods</code> returns only expired food.
+	 * Add 4 good items and 4 expired items. Call <code>removeExpiredFoods</code>
+	 * and check that only the expired items where removed.
 	 */
 	@Test
 	public void removeExpiredItemsTest() {
